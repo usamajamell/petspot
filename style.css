@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Alro;
+    src: url(alro-alro-regular-400.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+
+body {
+    background-color: #fdf7f7;
+    overflow-x: hidden;
+}
+
+.logo-name {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: auto;
+}
+
+.btn-login {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+}
+.btn-login:hover {
+    border: 1px solid black;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #646466;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.hero-heading {
+    font-family: alro;
+    font-size: 4.5rem;
+    font-weight: 1000;
+}
+
+.animal1 {
+    transform: rotate(21deg);
+    /* background-color: red; */
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 24px 24px 48px #d7d7d7,
+        -24px -24px 48px #e9e9e9;
+
+}
+
+.animal2 {
+    transform: rotate(-21deg) scaleX(-1);
+    /* background-color: red; */
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 24px 24px 48px #d7d7d7,
+        -24px -24px 48px #e9e9e9;
+}
+
+.btn-action {
+    background-color: #D5C7FF;
+    font-size: large;
+    padding: 20px 40px 20px 40px;
+    border: none;
+    border-radius: 20px;
+}
+.btn-action:hover {
+    background-color: #720e9e;
+    transition: 0.64s;
+    
+}
+
+.highlighted-text {
+    color: #9C73FF;
+    background: -webkit-linear-gradient(#720e9e, #9C73FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mgs:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetStore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar">
+        <div class="container">
+            <!-- Logo and Brand Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="pet-spot-logo.png" alt="PetShow Logo">
+                <span class="ms-2 fw-bold text-dark">PetSpot</span>
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Login Button -->
+                <a href="#" class="btn btn-login">Login</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-center mgs"><img id="dogbone" src="Dog_Bone-512.png" width="22%" alt="" srcset=""></div>
+            <div class="col-4 text-center"></div>
+            <div class="col-4 text-center mgs"><img id="dogpaws" src="pwas.png" width="22%" alt="" srcset=""></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h1 class="hero-heading text-center">The best place to get <br> your <span class="highlighted-text">favorite
+                    pet</span> without <br> any doubt</h1>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center animal1"><img src="cat-removebg-preview.png" width="25%" alt="" srcset="">
+            </div>
+            <div class="col-xl-6 text-center mt-5">
+                <h5 style="color: #646466;" id="sub-text">Find Your Perfect Companion Here
+                    <br> Where every wag, purr, and chirp brings love home
+                </h5>
+            </div>
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center animal2"><img src="dog.png" width="25%" alt="" srcset=""></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5"><button id="getstrtd" class="btn-action">Get Started <svg
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                        </svg></button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
