@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetStore</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<link rel=" stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,7 +23,7 @@
         <div class="container">
             <!-- Logo and Brand Name -->
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="pet-spot-logo.png" alt="PetShow Logo">
+                <img src="assets/pet-spot-logo.png" alt="PetShow Logo">
                 <span class="ms-2 fw-bold text-dark">PetSpot</span>
             </a>
 
@@ -31,49 +37,70 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Collection</a>
+                        <a class="nav-link" href="#collection">Collection</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">All Pet</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <!-- Login Button -->
-                <a href="#" class="btn btn-login">Login</a>
+                <a href="#" class="btn btn-login">Order Now</a>
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" id="home">
         <div class="row">
-            <div class="col-4 text-center mgs"><img id="dogbone" src="Dog_Bone-512.png" width="22%" alt="" srcset=""></div>
+            <div class="col-4 text-center mgs"><img id="dogbone" src="assets/Dog_Bone-512.png" width="22%" alt=""
+                    srcset=""></div>
             <div class="col-4 text-center"></div>
-            <div class="col-4 text-center mgs"><img id="dogpaws" src="pwas.png" width="22%" alt="" srcset=""></div>
+            <div class="col-4 text-center mgs"><img id="dogpaws" src="assets/pwas.png" width="22%" alt="" srcset="">
+            </div>
         </div>
     </div>
 
     <div class="container-fluid">
         <div class="row text-center">
             <h1 class="hero-heading text-center">The best place to get <br> your <span class="highlighted-text">favorite
-                    pet</span> without <br> any doubt</h1>
+                    pet</span> without <br> any doubt <svg class="star" width="100" height="100" viewBox="0 0 200 200"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_104_26)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                            fill="url(#paint0_linear_104_26)" />
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_104_26" x1="20.5" y1="16" x2="100" y2="200"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#ACAAFF" />
+                            <stop offset="1" stop-color="#C0E8FF" />
+                        </linearGradient>
+                        <clipPath id="clip0_104_26">
+                            <rect width="200" height="200" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg></h1>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-md-3 col-sm-6 text-center animal1"><img src="cat-removebg-preview.png" width="25%" alt="" srcset="">
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center"><img class="animal1"
+                    src="assets/ai-cute-siberian-husky-dog-free-png.png" width="30%" alt="" srcset="">
             </div>
             <div class="col-xl-6 text-center mt-5">
                 <h5 style="color: #646466;" id="sub-text">Find Your Perfect Companion Here
                     <br> Where every wag, purr, and chirp brings love home
                 </h5>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 text-center animal2"><img src="dog.png" width="25%" alt="" srcset=""></div>
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center"><img class="animal2" src="assets/dog.png" width="30%"
+                    alt="" srcset=""></div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mt-5"><button id="getstrtd" class="btn-action">Get Started <svg
+                <div class="col-12 text-center mt-5"><button id="getstrtd" class="btn-action">Get Started &nbsp;<svg
                             xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                             class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -83,11 +110,235 @@
         </div>
     </div>
 
+    <div class="container-fluid mt-5" id="collection">
+        <div class="row cat-main">
+            <div class="col-12 text-center mt-5">
+                <h2 class="text-center mb-5">View our categories</h2>
+            </div>
+        </div>
+        <div class="row gmp-main mt-3">
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center"><img class="gmp1"
+                    src="assets/labrador_retriever_PNG2.png" width="70%" alt="" srcset="">
+                <h3 class="mt-3">Max</h3><button class="btn-action text-center mt-4 mb-3 ">View Detail &nbsp; <svg
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg></button>
+            </div>
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center"><img class="gmp2" src="assets/golden retriever dog.png"
+                    width="70%" alt="" srcset="">
+                <h3 class="mt-3">Charlie</h3><button class="btn-action text-center mt-4 mb-3  ">View Detail &nbsp; <svg
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg></button>
+            </div>
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center"><img class="gmp3" src="assets/siberian husky dog.png"
+                    width="70%" alt="" srcset="">
+                <h3 class="mt-3">Rocky</h3><button class="btn-action text-center mt-4 mb-3  ">View Detail &nbsp; <svg
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg></button>
+            </div>
+            <div class="col-xl-3 col-md-3 col-sm-6 text-center"><img class="gmp4" src="assets/german-shepherd.png"
+                    width="70%" alt="" srcset="">
+                <h3 class="mt-3">Leo</h3><button class="btn-action text-center mt-4 mb-3   ">View Detail &nbsp; <svg
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg></button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5" id="features"></div>
+    <div class="container-fluid" id="features">
+        <div class="row text-center">
+            <div class="row text-center mt-5 mb-5">
+                <h2>Explore our features</h2>
+                <h5 style="color: #F3EDFF;" id="sub-text">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
+                    Accusantium, error.
+                </h5>
+            </div>
+            <div class="text-center col-xl-2 col-md-3 col-sm-6 fts mb-4"><img class="mt-4 mb-4" width="60%"
+                    src="assets/quality-pet.png" width="90px" alt="" srcset="">
+                <h4>Multi-color Pet
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium eum culpa, maiores nam
+                    sequi quibusdam numquam eaque blanditiis velit!</p>
+            </div>
+            <div class="text-center col-xl-2 col-md-3 col-sm-6 fts mb-4"><img class="mt-4 mb-4" width="60%"
+                    src="assets/doctor.png" width="90px" alt="" srcset="">
+                <h4>Doctor Advise
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium eum culpa, maiores nam
+                    sequi quibusdam numquam eaque blanditiis velit!</p>
+            </div>
+            <div class="text-center col-xl-2 col-md-3 col-sm-6 fts mb-4"><img class="mt-4 mb-4" width="60%"
+                    src="assets/dog-svg.png" width="90px" alt="" srcset="">
+                <h4>Quality Pet
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium eum culpa, maiores nam
+                    sequi quibusdam numquam eaque blanditiis velit!</p>
+            </div>
+            <div class="text-center col-xl-2 col-md-3 col-sm-6 fts mb-4"><img class="mt-4 mb-4" width="60%"
+                    src="assets/delivery.png" width="90px" alt="" srcset="">
+                <h4>Home Delivery
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium eum culpa, maiores nam
+                    sequi quibusdam numquam eaque blanditiis velit!</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mt-5">Customer Reviews</h2>
+    <div class="container-fluid" id="testimonials">
+        <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="content">
+                <p class="t-desc">"Great service and amazing pets!"</p>
+                <h3 class="customer">- Elliot J.</h3>
+            </div>
+        </div>
+        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1518815068914-038920b6f0c6?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="content">
+                <p class="t-desc">"My pet loves their food and toys!"</p>
+                <h3 class="customer">- Sarah Smith</h3>
+            </div>
+        </div>
+        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1516366434321-728a48e6b7bf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="content">
+                <p class="t-desc">"Friendly staff and excellent service!"</p>
+                <h3 class="customer">- Mike Johnson</h3>
+            </div>
+        </div>
+        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="content">
+                <p class="t-desc">"High-quality products for my pets!"</p>
+                <h3 class="customer">- Lisa Brown</h3>
+            </div>
+        </div>
+        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1491930722919-a5fc9ad49a75?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="content">
+                <p class="t-desc">"Best pet store in town!"</p>
+                <h3 class="customer">- Emma Wilson</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-1"><button id="getstrtd" class="btn-action">Get Started &nbsp;<svg
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg></button></div>
+        </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div class="container text-center mt-5" id="faq">
+        <div class="col-12 text-center">
+            <h2 class="text-center mt-5">Frequently asked Questions
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-12 text-center">
+                <details>
+                    <summary>What types of pets do you provide products for?</summary>
+                    <div>
+                        We offer a wide range of products for dogs, cats, birds, fish, reptiles, and small pets like hamsters and rabbits.
+                    </div>
+                </details>
+                <details>
+                    <summary>How can I track my order?</summary>
+                    <div>
+                        Once your order is shipped, you’ll receive a tracking number via email, allowing you to monitor its delivery status.
+                    </div>
+                </details>
+                <details>
+                    <summary>Do you offer returns or exchanges?</summary>
+                    <div>
+                        Yes! We accept returns and exchanges within 14 days of purchase, provided the item is unused and in its original packaging.
+                    </div>
+                </details>
+                <details>
+                    <summary>Are your pet products safe and vet-approved?</summary>
+                    <div>
+                        Absolutely! We source high-quality, vet-recommended products to ensure the safety and well-being of your pets.
+                    </div>
+                </details>
+                <details>
+                    <summary>Do you offer subscriptions for pet food and supplies?</summary>
+                    <div>
+                        Yes, we have a subscription service for pet essentials like food and treats, so you never run out of supplies!
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FAQs Section -->
+     <!-- Contact Form -->
+
+    <div class="container-fluid" id="contact">
+        <h2 class="title mt-4">Let's Talk</h2>
+        <p class="text-center">
+            Have questions or need assistance? Reach out to us <br> we're here to help you find the perfect products for your beloved pets!
+        </p>
+        <div class="form-container container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12 mb-2"> 
+                    <label class="text-start" for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="col-xl-12 col-md-12 col-sm-12 mb-2"> 
+                    <label class="text-start" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="col-xl-12 col-md-12 col-sm-12 mb-2"> 
+                    <label class="text-start" for="message">Message</label>
+                    <textarea id="message" placeholder="Message"></textarea>
+                </div>
+                <div class="col-xl-12 col-md-12 col-sm-12 mb-2"> 
+                    <button class="submit-btn mt-4" onclick="sendMessage()">Send message</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- Contact Form -->
+    <!-- Footer Section -->
+     <!-- fontawesome is beign ised for social icons -->
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="social" role="navigation" aria-labelledby="social-heading">
+        <h id="social-heading" class="sr-only">Follow us on social media</h>
+        <a href="https://github.com/usamajamil2023" target="_blank"  aria-label="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://dribbble.com/usamajamel" target="_blank"  aria-label="Dribble"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="https://wa.me/923271835916?" target="_blank"  aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/usamajamel"  target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <h2 class="text-center">PetSpot</h2>
+    <hr class="footer-break text-center">
+    <div class="copyright">
+        <span class="text-center dbs">© <span id="current-year"></span> <a href="https://wa.me/923271835916?" target="_blank"><b>Usama Jamil</b></a> All Rights Reserved</span>
+    </div>
+
+</footer>
+
+      
+    <!-- Footer Section -->
+
+    <!-- <div class="footer-bottom text-center">
+        <p>&copy; 2024 Usama Jamil. All Rights Reserved.</p>
+    </div> -->
     <!-- GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="main.js"></script>
+    <script src="main.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

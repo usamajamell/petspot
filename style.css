@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 @font-face {
     font-family: Alro;
@@ -9,11 +12,40 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", serif;
+    box-sizing: border-box;
+}
+
+@media (min-width: 992px) and (max-width: 1800px) {
+    @keyframes appear {
+        from {
+            opacity: 0;
+            /* clip-path: inset(100% 100% 0 0); */
+            /* transform: translateY(1000px); */
+            transform: translate(-1000px);
+        }
+
+        to {
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+        }
+    }
+}
+
+
+.container-fluid {
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 body {
     background-color: #fdf7f7;
     overflow-x: hidden;
+}
+
+::selection {
+    color: #9C73FF;
+    background: #000;
 }
 
 .logo-name {
@@ -27,11 +59,12 @@ body {
 }
 
 .btn-login {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fdf7f7;
     border-radius: 20px;
     padding: 10px 30px 10px 30px;
 }
+
 .btn-login:hover {
     border: 1px solid black;
 }
@@ -44,6 +77,93 @@ body {
     .navbar-nav {
         text-align: center;
     }
+}
+
+/* Small Devices (Phones) */
+@media(min-width: 276px) and (max-width: 999px) {
+
+    /* Styles for screens between 576px and 767px wide */
+    .title {
+        margin-top: 30px;
+    }
+
+    .form-container {
+        display: flex;
+        padding: 5px 5px 5px 5px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #testimonials {
+        display: flex;
+        width: 100vw;
+        height: 60vh;
+        gap: 10px;
+        padding: 0px 4px 0px 4px;
+        margin-bottom: 10px;
+    }
+
+    .panel {
+        flex: 1;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        position: relative;
+        transition: flex 0.5s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .panel.active {
+        flex: 5;
+    }
+
+    .panel .content {
+        position: absolute;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        /* Darker overlay for better readability */
+    }
+
+    .panel.active .content {
+        opacity: 1;
+    }
+
+    .panel .t-desc {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 01);
+        /* Adds a shadow for better visibility */
+    }
+
+    .panel .customer {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Ensures the name stands out */
+    }
+}
+
+.submit-btn {
+    background: #9C73FF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -59,8 +179,20 @@ body {
 
 .hero-heading {
     font-family: alro;
-    font-size: 4.5rem;
     font-weight: 1000;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-family: alro;
+    font-size: 3.2rem;
+    font-weight: 1000;
+}
+
+h3 {
+    font-family: montserrat;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .animal1 {
@@ -85,39 +217,481 @@ body {
 }
 
 .btn-action {
-    background-color: #D5C7FF;
+    background-color: #fdf7f7;
     font-size: large;
     padding: 20px 40px 20px 40px;
-    border: none;
+    border: 1px sold black;
     border-radius: 20px;
 }
+
 .btn-action:hover {
-    background-color: #720e9e;
+    background-color: #ca90e3;
     transition: 0.64s;
-    
+    transform: scale(1.1);
+
 }
 
 .highlighted-text {
     color: #9C73FF;
+    font-weight: 700;
     background: -webkit-linear-gradient(#720e9e, #9C73FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .mgs:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/* img {
+    border-radius: 50%;
+} */
+
+.gmp-main {
+    margin: 0px 30px 0px 30px;
+    /* column-gap: 4px; */
+}
+
+.gmp1 {
+    background-color: #d5c5fd;
+    border-radius: 50%;
+    transition: transform .4s;
+    /* Animation */
+
+}
+
+.gmp1:hover {
+    background-color: #ac8dfd;
+    transition: 0.44s;
+    transform: scale(1.1);
+}
+
+.gmp2 {
+    background-color: #F4A3D5;
+    border-radius: 50%;
+    transition: transform .4s;
+    /* Animation */
+
+}
+
+.gmp2:hover {
+    background-color: #f677c5;
+    transition: 0.44s;
+    transform: scale(1.1);
+}
+
+.gmp3 {
+    background-color: #FDDA51;
+    border-radius: 50%;
+    transition: transform .4s;
+    /* Animation */
+
+}
+
+.gmp3:hover {
+    background-color: #fdcf17;
+    transition: 0.44s;
+    transform: scale(1.1);
+}
+
+.gmp4 {
+    background-color: #B8F6D5;
+    border-radius: 50%;
+    transition: transform .4s;
+    /* Animation */
+
+}
+
+.gmp4:hover {
+    background-color: #74eead;
+    transition: 0.44s;
+    transform: scale(1.1);
+}
+
+h3:hover {
+    font-weight: 800;
+    transition: 0.44s;
+    transform: scale(1.3);
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+
+#features {
+    margin-top: 100px;
+}
+
+#features>.row {
+    background-color: #ac8dfd;
+    /* background-color: #fff; */
+    column-gap: 20px;
+    border-radius: 30% 30% 10px 10px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.fts {
+    background-color: #F3EDFF;
+    border-radius: 30px;
+    transition: transform .6s;
+}
+
+.fts:hover {
+    transform: scale(1.2);
+}
+
+.star {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1800px) {
+    /* Styles for screens between 992px and 1800px wide */
+
+    #testimonials {
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+        gap: 10px;
+        padding: 80px 80px 80px 80px;
+    }
+
+    .panel {
+        flex: 1;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        position: relative;
+        transition: flex 0.5s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .panel.active {
+        flex: 5;
+    }
+
+    .panel .content {
+        position: absolute;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        /* Darker overlay for better readability */
+    }
+
+    .panel.active .content {
+        opacity: 1;
+    }
+
+    .panel .t-desc {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 01);
+        /* Adds a shadow for better visibility */
+    }
+
+    .panel .customer {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Ensures the name stands out */
+    }
+
+}
+
+
+#contact {
+    text-align: center;
+    margin-top: 100px;
+    /* border-radius: 20%; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+@media (min-width: 992px) and (max-width: 1800px) {
+    .title {
+        margin-top: 30px;
+    }
+
+    .form-container {
+        display: flex;
+        padding: 50px 250px 50px 250px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .submit-btn {
+        background: #9C73FF;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* FAQs Section */
+#faq {
+    margin-bottom: 50px;
+}
+
+details {
+    background-color: #EADDF9;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 1rem;
+}
+
+summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after {
+    content: "\002B";
+    /* Plus sign */
+    color: #AC8DFD;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #fff;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after {
+    content: "\00D7";
+    /* Cross sign */
+}
+
+/* Smooth dropdown transition */
+details div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+details[open] div {
+    max-height: 500px;
+    /* A large enough value for the content */
+    padding: .5em 1em;
+}
+
+/* FAQs Section */
+
+/* Default text color inside input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    color: #2B2D42;
+    /* Dark blue-gray text */
+    background-color: #c4abff;
+    /* Light gray background for normal state */
+    border: 1px solid #c4abff;
+    /* Light gray border */
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* For when the input fields are focused (clicked) */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #fdf7f7;
+    /* Red background when focused */
+    color: #000;
+    /* White text on red background */
+    border: 1px solid #fdf7f7;
+    /* Red border to indicate focus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    /* Sharp black shadow at the bottom */
+    outline: none;
+    /* Remove default focus outline */
+}
+
+
+/* Footer Section */
+.footer {
+    padding: 40px 0;
+    /* background-color: #9C73FF; */
+    background: -webkit-linear-gradient(#a681ff, #9C73FF);
+    color: white;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer li {
+    display: inline-block;
+    /* Change to inline-block for horizontal layout */
+    padding: 0 10px;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.footer-break {
+    border-width: 0;
+    color: gray;
+}
+
+.dbs {
+    font-size: 17px;
+    color: #fdf7f7;
+}
+
+.dbs>a {
+    list-style: none;
+    text-decoration: none;
+    color: #fdf7f7;
+}
+
+/* Footer Section */
